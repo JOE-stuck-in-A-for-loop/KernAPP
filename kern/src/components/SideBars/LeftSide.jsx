@@ -12,18 +12,18 @@ const styles = {
     resize: 'horizontal',
     overflow: 'auto',
     minWidth: '180px',
-    maxWidth: '450px',
+    maxWidth: '400px',
     
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',   
-    flexshrink:'0',
+    flexShrink:'0',
     
     position:'relative',
     };
 
-function LeftSide() {
+function LeftSide({onOpenSettings}) {
 
 
 
@@ -50,9 +50,36 @@ function LeftSide() {
           position:'absolute',
           bottom: '10px',
           left: '10px',
+          width: 'calc(100% - 20px)',
           
         }}>
-          ⚙️Setting
+          <style>{`
+            #setting-button {
+              background-color: transparent;
+              border: none;
+              border-radius: 4px;
+              box-sizing: border-box;
+              cursor: pointer;
+              font-size: 16px;
+              transition: background-color 0.2s ease;
+              
+              text-align: left;
+              width: 100%;
+            }
+
+            #setting-button:hover {
+              background-color: #c0fff5;
+              border-radius: 4px;
+              
+            }
+          `}</style>
+          <button id='setting-button' style={{
+            border:'none',
+            cursor:'pointer',
+            fontSize:'16px',
+          }}
+          onClick={onOpenSettings}
+          >⚙️Setting</button>
         </div>
     </div>
   );
