@@ -9,7 +9,7 @@ const styles = {
 
     flex: 1,
 
-   
+    userSelect:'none',
 }
 
 function TaskComposer() {

@@ -1,7 +1,7 @@
 .settings-dialog {
     box-sizing: border-box;
-    width: 82vw;
-    height: 80vh;
+    width: 90vw;
+    height: 90vh;
     margin: auto;
     padding: 28px;
     overflow: auto;
@@ -12,6 +12,11 @@
     color: #242424;
     box-shadow: 0 16px 60px rgb(0 0 0 /18%);
 
+}
+
+.settings-dialog ::backdrop{
+    background: rgb(20 24 32 / 14%);
+    backdrop-filter: blur(6px);
 }
 
 .settings-header {

@@ -21,6 +21,8 @@ const styles = {
     flexShrink:'0',
     
     position:'relative',
+
+    userSelect: 'none',
     };
 
 function LeftSide({onOpenSettings}) {
@@ -33,7 +35,8 @@ function LeftSide({onOpenSettings}) {
             width: '100%',
             height: '8%',
             display: 'flex',
-            justifyContent: 'center',}}>
+            justifyContent: 'center',
+            userSelect:'none',}}>
             <h1>Kern</h1>
             
         </div>
